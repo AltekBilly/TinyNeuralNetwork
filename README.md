@@ -9,18 +9,12 @@ Python >= 3.6, PyTorch >= 1.4（ PyTorch >= 1.6 if quantization-aware training i
 
 ```shell
 # Install the TinyNeuralNetwork framework
-git clone https://github.com/alibaba/TinyNeuralNetwork.git
+git clone http://192.168.215.101:3000/BillyHsueh/TinyNeuralNetwork.git
 cd TinyNeuralNetwork
 python setup.py install
 
 # Alternatively, you may try the one-liner
-pip install git+https://github.com/alibaba/TinyNeuralNetwork.git
-```
-
-Or you could build with docker
-
-```shell
-sudo docker build -t tinynn:pytorch1.9.0-cuda11.1 .
+pip install git+http://192.168.215.101:3000/BillyHsueh/TinyNeuralNetwork.git
 ```
 
 ## Contributing
