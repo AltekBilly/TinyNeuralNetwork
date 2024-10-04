@@ -71,3 +71,23 @@ When you encounter problems You can check out the [FAQ](docs/FAQ.md), or join th
 
 
 ![img.png](docs/qa.png)
+
+## For Altek - Convert TorchScript to TFLite
+```shell
+cd TinyNeuralNetwork/
+python examples/converter/convert.py
+```
+
+model file path
+```
+Place the model_name.pt file in the "TinyNeuralNetwork/examples/converter/" directory.
+The converted model_name.tflite will be generated in the "TinyNeuralNetwork/examples/converter/out" directory.
+```
+
+convert.py:
+```python
+...
+TYPE = 'int8' # [int8 for m1] or [uint8 for PC demo]
+NAME = 'model_name' # only stem of filename
+...
+```
